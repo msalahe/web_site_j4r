@@ -1,0 +1,86 @@
+/* Home Slider Area css
+============================================================================================ */
+.main_slider_area {
+  ul {
+    li {
+      .slider_text_box {
+        .tag_text {
+          color: #fff;
+          font-family: $sw;
+        }
+        .first_text {
+          color: #fff;
+          font-family: $swb;
+          span {
+            color: $baseColor;
+          }
+        }
+        .secand_text {
+          color: #fff;
+          font-family: $sw;
+        }
+        .br_s_text {
+          .br_s {
+            width: 46px;
+            height: 1px;
+            background: #fff;
+            display: inline-block;
+          }
+        }
+        .slider_button {
+          .arrow_btn {
+            color: #fff;
+            font: 20px $swb;
+            @include transition;
+            i {
+              font-size: 18px;
+              margin-left: 6px;
+            }
+            &:hover {
+              color: $baseColor;
+              i {
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .rev_slider {
+    .tp-bullets {
+      .tp-bullet {
+        width: 20px;
+        height: 4px;
+        background: #fff;
+        opacity: 1;
+        &.selected {
+          background: $baseColor;
+        }
+      }
+    }
+  }
+  @media (min-width: 1300px) {
+    .rev_slider {
+      .tp-bullets {
+        max-width: 1106px !important;
+        margin: auto !important;
+        width: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        bottom: 130px;
+        .tp-bullet {
+          width: 20px;
+          height: 4px;
+          background: #fff;
+          opacity: 1;
+          &.selected {
+            background: $baseColor;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Home Slider Area css
+============================================================================================ */

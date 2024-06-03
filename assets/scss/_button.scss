@@ -1,0 +1,44 @@
+/* Button Area css
+============================================================================================ */
+.arrow_btn {
+  font: 16px $sw;
+  color: $baseColor;
+  display: inline-block;
+  @include transition;
+  i {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+    @include transition;
+  }
+  &:hover {
+    color: $dip;
+    i {
+      margin-left: 0px;
+    }
+  }
+  &.dark {
+    color: $dip;
+  }
+}
+.submit_btn {
+  background: $baseColor;
+  line-height: 50px;
+  border-radius: 0px;
+  text-align: center;
+  padding: 0px 43px;
+  color: $dip;
+  outline: none !important;
+  box-shadow: none !important;
+  padding-top: 3px;
+  font-size: 13px;
+  font-family: $sw;
+  @include transition;
+  &:hover {
+    background: $dip;
+    color: #fff;
+  }
+}
+/* End Button Area css
+============================================================================================ */

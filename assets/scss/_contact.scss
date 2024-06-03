@@ -1,0 +1,113 @@
+/* Contact Page Area css
+============================================================================================ */
+.mapBox {
+  min-height: 768px;
+}
+.contact_page_area {
+  .main_title {
+    margin-bottom: 55px;
+    h2 {
+      font-size: 29px;
+      line-height: 42px;
+    }
+  }
+}
+.contact_details {
+  p {
+    margin-bottom: 40px;
+  }
+  h2 {
+    font: 29px/42px $sw;
+    color: $dip;
+    margin-bottom: 45px;
+  }
+  .nav {
+    li {
+      margin-bottom: 25px;
+      span {
+        color: $dip;
+        font-family: $swb;
+      }
+      a {
+        font: 16px $sw;
+        color: #767676;
+        span {
+          color: $dip;
+          font-family: $swb;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      &:nth-child(3) {
+        a {
+          font-size: 24px;
+          margin-left: 16px;
+          color: #adadad;
+          @include transition;
+          &:hover {
+            color: $baseColor;
+          }
+        }
+      }
+    }
+  }
+}
+.contact_form {
+  .input-group {
+    margin-bottom: 30px;
+    input {
+      border: 1px solid #c9c9c9;
+      box-sizing: border-box;
+      border-radius: 0px;
+      height: 50px;
+      padding: 3px 18px 0px 18px;
+      outline: none;
+      box-shadow: none;
+      font: 16px/50px $sw;
+      color: #767676;
+      @include placeholder {
+        font: 16px/50px $sw;
+        color: #767676;
+      }
+      &:focus {
+        border-color: $baseColor;
+      }
+    }
+    label {
+      width: 100%;
+      display: block;
+      margin-top: 12px;
+      color: red;
+    }
+    textarea {
+      border: 1px solid #c9c9c9;
+      box-sizing: border-box;
+      border-radius: 0px;
+      height: 174px;
+      padding: 3px 18px 0px 18px;
+      outline: none;
+      box-shadow: none;
+      font: 16px/50px $sw;
+      color: #767676;
+      @include placeholder {
+        font: 16px/50px $sw;
+        color: #767676;
+      }
+      &:focus {
+        border-color: $baseColor;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.success-message,
+.error-message {
+  display: none;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+/* End Contact Page Area css
+============================================================================================ */

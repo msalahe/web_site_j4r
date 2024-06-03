@@ -1,0 +1,47 @@
+/*font Variables*/
+$sw: "swanse";
+$swb: "swanseb";
+
+/*Color Variables*/
+$baseColor: #d3ed34;
+$dip: #000;
+$pfont: #787878;
+
+/*=================== fonts ====================*/
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// Project Core Font Family
+@font-face {
+  font-family: "swanse";
+  src: url(../fonts/swansea-webfont.woff);
+}
+@font-face {
+  font-family: "swanseb";
+  src: url(../fonts/swansea_bold-webfont.woff);
+}

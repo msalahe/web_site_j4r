@@ -1,0 +1,37 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 150px;
+  padding-bottom: 130px;
+  border-top: 1px solid #a6a6a6;
+}
+.copyright_wd {
+  p {
+    color: $dip;
+  }
+}
+.list_wd {
+  padding-left: 20px;
+  .nav {
+    li {
+      margin-bottom: 4px;
+      a {
+        color: $dip;
+        font: 16px/26px $sw;
+        @include transition;
+        &:hover {
+          color: $baseColor;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+/* End Footer Area css
+============================================================================================ */

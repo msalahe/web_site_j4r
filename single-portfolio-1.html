@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>J4R Échafaudages &#8211; Expert dans le transport, la location et le montage d’échafaudages</title>
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/linearicons/style.css" />
+    <link rel="stylesheet" href="assets/vendors/linearicons-2/css/linearicons.css" />
+
+    <!-- Rev slider css -->
+    <link href="assets/vendors/revolution/css/settings.css" rel="stylesheet" />
+    <link href="assets/vendors/revolution/css/layers.css" rel="stylesheet" />
+    <link href="assets/vendors/revolution/css/navigation.css" rel="stylesheet" />
+
+    <!-- Extra Plugin CSS -->
+    <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="assets/vendors/popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/splitting/splitting.css" />
+    <link rel="stylesheet" href="assets/vendors/animsition-preloader/css/animsition.min.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+        /* custom.css */
+        .project-details {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .details {
+            flex: 1 1 300px;
+            padding: 20px;
+            color: #333;
+        }
+
+        .images {
+            flex: 2 1 600px;
+            padding: 20px;
+        }
+
+        .images img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .small-images {
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .small-images img {
+            flex: 0 0 auto;
+            width: 32%;
+            height: auto;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .small-images img:last-child {
+            margin-right: 0;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #222;
+            color: #28262b;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: "texgyreadventorregular";
+            line-height: 19.18px;
+            text-transform: none;
+            letter-spacing: 0px;
+            color: #28262b;
+            position: relative;
+            text-transform: uppercase;
+            text-align: left;
+            margin-bottom: 27px;
+        }
+
+        .nature_traveaux {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: "Raleway";
+            line-height: 22px;
+            text-transform: none;
+            letter-spacing: 0px;
+            color: #565656;
+        }
+
+        @media (max-width: 768px) {
+            .project-details {
+                flex-direction: column;
+            }
+
+            .details,
+            .images {
+                flex: 1 1 100%;
+            }
+
+            .small-images img {
+                max-width: 48%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            margin: auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 700px;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            margin-top: 10%;
+
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body data-scroll-animation="true" class="loading">
+    <div class="animsition">
+        <div class="body_wrapper">
+
+            <!--================Header Area =================-->
+            <header class="header_area menu_dark">
+                <div class="home_logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="main_menu">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" alt="" />
+                            </a>
+                            <a class="number" href="tel:+33160072201">+33 (1) 6007-22-01</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <li class="dropdown submenu">
+                                        <a href="index.html">ACCUEIL</a>
+                                        <i class="fa fa-angle-down mobile_dropdown" aria-hidden="true"
+                                            data-toggle="dropdown"></i>
+                                    </li>
+                                    <li><a href="about.html">Qui sommes-nous ?</a></li>
+                                    <li class="dropdown submenu active">
+                                        <a href="portfolio.html">Nos Références</a>
+                                        <i class="fa fa-angle-down mobile_dropdown" aria-hidden="true"
+                                            data-toggle="dropdown"></i>
+                                    </li>
+
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!--================End Header Area =================-->
+
+            <!--================Portfolio Area =================-->
+            <section class="portfolio_area portfolio_masonry pb-174">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="project-details">
+                                <div class="details">
+                                    <h3>Projet :</h3>
+                                    <p>Docks des alcools – Saint Denis (93)</p>
+                                    <h3>NATURE DES TRAVAUX</h3>
+                                    <p class="nature_traveaux">Réalisation d’un échafaudage de pied en structure pleine
+                                        pour une utilisation en
+                                        plancher de travail et support pour cadre bâche.
+                                    </p>
+
+                                </div>
+                                <div class="images">
+                                    <img src="assets/images/projet/1.JPG" alt="Image 1" class="main-image"
+                                        onclick="openLightbox(); currentSlide(1)">
+                                    <div class="small-images">
+                                        <img src="assets/images/projet/2.JPG" alt="Image 2"
+                                            onclick="openLightbox(); currentSlide(2)">
+                                        <img src="assets/images/projet/3.JPG" alt="Image 3"
+                                            onclick="openLightbox(); currentSlide(3)">
+                                        <img src="assets/images/projet/4.JPG" alt="Image 4"
+                                            onclick="openLightbox(); currentSlide(4)">
+                                        <img src="assets/images/projet/4.JPG" alt="Image 4"
+                                            onclick="openLightbox(); currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--================End Portfolio Area =================-->
+
+        </div>
+
+        <div class="height-emulator"></div>
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-5">
+                        <aside class="f_widget logo_wd">
+                            <img src="assets/images/logo.png" alt="" width="70%">
+                        </aside>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-7">
+                        <aside class="f_widget copyright_wd">
+                            <p>© J4R. 2024<br />
+                                All Rights Resevered</p>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <aside class="f_widget list_wd">
+                            <ul class="nav flex-column">
+                                <li><a href="">ACCUEIL</a></li>
+                                <li><a href="">Qui sommes-nous ?</a></li>
+                                <li><a href="">Nos Références</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <aside class="f_widget list_wd">
+                            <ul class="nav flex-column">
+                                <li><a href="https://fr.linkedin.com/company/j4r-echafaudages"
+                                        target="_blank">LINKEDIN</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                        <aside class="f_widget list_wd">
+                            <ul class="nav flex-column">
+
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+    </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img src="assets/images/projet/1.JPG" alt="Image 1">
+        </div>
+        <div class="lightbox-content">
+            <img src="assets/images/projet/2.JPG" alt="Image 1">
+        </div>
+        <div class="lightbox-content">
+            <img src="assets/images/projet/3.JPG" alt="Image 1">
+        </div>
+        <div class="lightbox-content">
+            <img src="assets/images/projet/4.JPG" alt="Image 1">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Rev slider js -->
+    <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+    <!-- Extra Plugin CSS -->
+    <script src="assets/vendors/animate-css/wow.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/isotop/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotop/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/splitting/splitting.min.js"></script>
+    <script src="assets/vendors/animsition-preloader/js/animsition.min.js"></script>
+
+    <script src="assets/js/theme.js"></script>
+    <script>
+        var slideIndex = 1;
+
+        function openLightbox() {
+            document.getElementById('lightbox').style.display = 'block';
+            document.addEventListener('keydown', closeLightboxOnEscape);
+
+        }
+        function closeLightbox(event) {
+            if (event.target === event.currentTarget || event.target.classList.contains('close')) {
+                document.getElementById('lightbox').style.display = 'none';
+                document.removeEventListener('keydown', closeLightboxOnEscape);
+            }
+        }
+
+        function closeLightboxOnEscape(event) {
+            if (event.key === "Escape") {
+                closeLightbox(event);
+            }
+        }
+
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("lightbox-content");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>

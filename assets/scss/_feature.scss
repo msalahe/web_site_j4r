@@ -1,0 +1,247 @@
+/* Who We Area css
+============================================================================================ */
+.who_we_area {
+  .col-lg-7 {
+    align-self: center;
+  }
+}
+.who_we_text {
+  p {
+    max-width: 492px;
+    margin-bottom: 20px;
+  }
+  .arrow_btn {
+    margin-bottom: 50px;
+  }
+  h5 {
+    color: $dip;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+  h6 {
+    font: 16px/24px $sw;
+    color: $pfont;
+    margin-bottom: 20px;
+  }
+}
+.who_we_img {
+  text-align: right;
+}
+/* End Who We Area css
+============================================================================================ */
+
+/* Specialization Area css
+============================================================================================ */
+.specialization_area {
+  .col-lg-6 {
+    align-self: center;
+  }
+}
+.spec_text {
+  .main_title {
+    margin-bottom: 60px;
+  }
+}
+.spec_list {
+  .col-lg-6 {
+    align-self: flex-start;
+  }
+  h4 {
+    color: $dip;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .nav {
+    li {
+      margin-bottom: 5px;
+      a {
+        font: 16px/26px $sw;
+        color: $pfont;
+        @include transition;
+        span {
+          display: inline-block;
+          width: 10px;
+          & + span {
+            display: none;
+          }
+        }
+      }
+      &:hover {
+        a {
+          color: $baseColor;
+          span {
+            display: none;
+            & + span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+/* End Specialization Area css
+============================================================================================ */
+
+/* Latest Project Area css
+============================================================================================ */
+.latest_project_area {
+  overflow: hidden;
+  .main_title {
+    margin-bottom: 70px;
+  }
+  .left {
+    width: calc(50% - 553px);
+    float: left;
+  }
+  .right {
+    width: calc(50% + 553px);
+    overflow: hidden;
+    float: right;
+    .latest_slider {
+      margin-left: -326px;
+      .item {
+        margin: 0px 27px;
+        outline: none;
+        box-shadow: none;
+        img {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+.l_project_item {
+  .left_text {
+    h6 {
+      font: 16px/26px $sw;
+      color: $pfont;
+      margin-bottom: 8px;
+    }
+    h4 {
+      color: $dip;
+      font-size: 29px;
+      margin-bottom: 0px;
+    }
+  }
+  .right_text {
+    h4 {
+      font-size: 16px;
+      color: $pfont;
+      margin-top: 24px;
+      margin-bottom: 0px;
+      span {
+        color: $dip;
+      }
+    }
+  }
+}
+/* End Latest Project Area css
+============================================================================================ */
+
+/* About Image Area css
+============================================================================================ */
+.about_img_area {
+  padding-top: 150px;
+  .main_title {
+    margin-bottom: 75px;
+    h2 {
+      line-height: 69px;
+    }
+  }
+}
+/* End About Image Area css
+============================================================================================ */
+
+/* Experience Area css
+============================================================================================ */
+.experience_design_area {
+  background: url(../images/design-bg.png) no-repeat scroll center center;
+  background-size: cover;
+  .exp_title {
+    display: flex;
+    align-items: flex-start;
+    .d-flex {
+      padding-right: 12px;
+      h3 {
+        color: $baseColor;
+        font-size: 112px;
+        line-height: 70px;
+        margin-bottom: 0px;
+        margin-top: 17px;
+      }
+    }
+    .media-body {
+      flex: 1;
+      align-self: center;
+      h5 {
+        color: $dip;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .exp_text {
+    .d-flex {
+      padding-right: 20px;
+      i {
+        font-size: 150px;
+        color: $baseColor;
+        font-style: normal;
+        font-family: $sw;
+        line-height: 100px;
+        margin-top: 24px;
+      }
+    }
+    .media-body {
+      p {
+        font: 20px/35px $sw;
+        color: $dip;
+        max-width: 400px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+.exp_design_text {
+  h2 {
+    color: $dip;
+    font: 35px/42px $swb;
+    margin-bottom: 40px;
+    span {
+      color: $baseColor;
+    }
+  }
+  p {
+    font-size: 26px;
+    line-height: 52px;
+    margin-bottom: -15px;
+  }
+}
+/* End Experience Area css
+============================================================================================ */
+
+/* Feature Area css
+============================================================================================ */
+.feature_item {
+  img {
+    margin-bottom: 30px;
+  }
+  h4 {
+    color: $dip;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 0px;
+    max-width: 285px;
+  }
+}
+/* End Feature Area css
+============================================================================================ */

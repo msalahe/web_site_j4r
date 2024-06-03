@@ -1,0 +1,21 @@
+/* Video Area css
+============================================================================================ */
+.video_area {
+  margin-top: -403px;
+  .video_inner {
+    .video_item {
+      position: relative;
+      margin-left: -14px;
+      .video {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+/* End Video Area css
+============================================================================================ */

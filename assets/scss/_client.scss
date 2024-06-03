@@ -1,0 +1,31 @@
+/* Client Logo Area css
+============================================================================================ */
+.client_logo_area {
+  .row {
+    margin-bottom: -115px;
+  }
+  &.p_top {
+    padding-top: 220px;
+  }
+}
+.client_logo_item {
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 115px;
+  img {
+    line-height: 80px;
+    display: inline-block;
+    margin: auto;
+  }
+}
+.client_logo_two {
+  padding-top: 170px;
+  padding-bottom: 140px;
+  .client_logo_item {
+    img {
+      opacity: 0.5;
+    }
+  }
+}
+/* End Client Logo Area css
+============================================================================================ */

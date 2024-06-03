@@ -1,0 +1,113 @@
+/* Testimonials Slider Area css
+============================================================================================ */
+.testimonials_area {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+}
+.testi_slider {
+  max-width: 408px;
+  .testi_item {
+    img {
+      margin-bottom: 40px;
+    }
+    h4 {
+      color: $dip;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    h5 {
+      color: $dip;
+      font: 16px $sw;
+      margin-bottom: 30px;
+      a {
+        color: $baseColor;
+      }
+    }
+  }
+}
+.testi_inner {
+  .col-lg-6 {
+    background: #fff;
+  }
+  .testi_slider {
+    background: #fff;
+    padding-top: 70px;
+  }
+  .testi_slider_box {
+    max-width: 538px;
+    width: 100%;
+    float: right;
+  }
+  .navigation {
+    margin-top: 40px;
+    padding-bottom: 110px;
+    .slick-arrow {
+      display: inline-block;
+      cursor: pointer;
+      i {
+        font-size: 18px;
+        color: $dip;
+      }
+    }
+    .next {
+      margin-left: 18px;
+    }
+  }
+}
+.video_big_image {
+  margin-top: 200px;
+  position: relative;
+}
+/* End Testimonials Slider Area css
+============================================================================================ */
+
+/* Text Testimonials Area css
+============================================================================================ */
+.testi_text {
+  text-align: center;
+  padding-top: 120px;
+  .nav {
+    justify-content: center;
+    margin-bottom: 115px;
+    li {
+      color: $dip;
+      font: 16px $swb;
+      margin-left: 20px;
+      &:first-child {
+        position: relative;
+        top: 5px;
+      }
+      a {
+        color: #adadad;
+        font-size: 24px;
+        @include transition;
+        &:hover {
+          color: $baseColor;
+        }
+      }
+    }
+  }
+}
+.testi_text_slider {
+  .item {
+    border: none;
+    outline: none;
+    p {
+      color: $dip;
+      font: 25px/50px $sw;
+      margin-bottom: 25px;
+    }
+    h4 {
+      color: #adadad;
+      font-size: 16px;
+      span {
+        color: $dip;
+      }
+    }
+  }
+}
+/* End Text Testimonials Area css
+============================================================================================ */
