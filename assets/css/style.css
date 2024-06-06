@@ -405,6 +405,7 @@ button:focus {
 .header_area.navbar_fixed .main_menu .navbar .nav.navbar-nav > li > a {
   line-height: 70px;
   color: #000;
+
 }
 
 .header_area.navbar_fixed .main_menu .navbar .nav.navbar-nav > li:hover > a, .header_area.navbar_fixed .main_menu .navbar .nav.navbar-nav > li.active > a {
@@ -1943,6 +1944,9 @@ button:focus {
   font: 16px "swanse";
   -webkit-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .g_fillter .nav li:hover a, .g_fillter .nav li.active a {

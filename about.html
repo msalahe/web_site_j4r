@@ -45,10 +45,11 @@
             transform: scale(1.05);
         }
         .content {
-            display: none;
+            display: block;
             margin-top: 10px;
             font-size: 0.9em;
             color: #555;
+            text-align: justify;
         }
         .grid-item.active .content {
             display: block;
@@ -60,6 +61,9 @@
         }
         .justify{
             text-align: justify;
+            font-family: 'DejaVu Sans', Arial, sans-serif;
+            font-size: 7px; /* Adjust the font size as needed */
+            color: #000; /* Change the text color if needed */
         }
     </style>
 </head>
@@ -88,7 +92,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="dropdown submenu">
-                                        <a href="index.html">ACCUEIL</a>
+                                        <a href="index.html">Accueil</a>
                                         <i class="fa fa-angle-down mobile_dropdown" aria-hidden="true"
                                             data-toggle="dropdown"></i>
                                     </li>
@@ -149,12 +153,10 @@
                         </h2>
                         <p class="justify">
                             La société J4R a débuté son activité sur des chantiers de constructions et à progressivement développée son expertise pour intervenir aujourd’hui également sur des marchés de rénovations, de restaurations, d’industries, …
-                            
                         </p>
                         <br>
                         <p class="justify">
                             Gérant en moyenne une soixantaine de chantiers par mois en Île De France, notre objectif premier est d’assurer la sécurité des utilisateurs et de faciliter la mise en œuvre de leurs activités.
-
                         </p>
                     </div>
                 </div>
@@ -164,6 +166,9 @@
             <!--================Feature Items Area =================-->
             <section class="feature_area p-170">
                 <div class="container">
+                    <div class="main_title">
+                        <h2 class="wow" data-splitting><span class="color">Nos</span> Services</h2>
+                      </div>
                     <div class="grid-container">
                         <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
                             <h3>BUREAU D’ETUDE</h3>
@@ -216,7 +221,7 @@
                             </div>
                         </div>
                         <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
-                            <h3>Location</h3>
+                            <h3>PROCÈS-VERBAL DE RÉCEPTION</h3>
                             <div class="content">
                                 <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux d’échafaudages et un bulletin d’adéquation validant la coordination entre les différents corps-d ’état utilisateurs.</p>
                                 
