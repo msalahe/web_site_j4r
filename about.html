@@ -33,6 +33,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
+
         .grid-item {
             background-color: #fff;
             padding: 20px;
@@ -41,9 +42,11 @@
             cursor: pointer;
             transition: transform 0.3s;
         }
+
         .grid-item:hover {
             transform: scale(1.05);
         }
+
         .content {
             display: block;
             margin-top: 10px;
@@ -51,19 +54,28 @@
             color: #555;
             text-align: justify;
         }
+
         .grid-item.active .content {
             display: block;
         }
+
         .grid-item h3 {
             margin: 0;
             font-size: 1.2em;
             color: #333;
         }
-        .justify{
+
+        .justify {
             text-align: justify;
             font-family: 'DejaVu Sans', Arial, sans-serif;
-            font-size: 7px; /* Adjust the font size as needed */
-            color: #000; /* Change the text color if needed */
+            font-size: 7px;
+            /* Adjust the font size as needed */
+            color: #000;
+            /* Change the text color if needed */
+        }
+
+        .services {
+            text-align: center;
         }
     </style>
 </head>
@@ -81,7 +93,7 @@
                     <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.png" alt="" />
+                                <img src="assets/images/j4r_logo.png" alt="" />
                             </a>
                             <a class="number" href="tel:+33160072201">+33 (1) 6007-22-01</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -152,11 +164,15 @@
                             <span>sans cesse</span> respecter nos engagements .
                         </h2>
                         <p class="justify">
-                            La société J4R a débuté son activité sur des chantiers de constructions et à progressivement développée son expertise pour intervenir aujourd’hui également sur des marchés de rénovations, de restaurations, d’industries, …
+                            La société J4R a débuté son activité sur des chantiers de constructions et à progressivement
+                            développée son expertise pour intervenir aujourd’hui également sur des marchés de
+                            rénovations, de restaurations, d’industries, …
                         </p>
                         <br>
                         <p class="justify">
-                            Gérant en moyenne une soixantaine de chantiers par mois en Île De France, notre objectif premier est d’assurer la sécurité des utilisateurs et de faciliter la mise en œuvre de leurs activités.
+                            Gérant en moyenne une soixantaine de chantiers par mois en Île De France, notre objectif
+                            premier est d’assurer la sécurité des utilisateurs et de faciliter la mise en œuvre de leurs
+                            activités.
                         </p>
                     </div>
                 </div>
@@ -167,67 +183,93 @@
             <section class="feature_area p-170">
                 <div class="container">
                     <div class="main_title">
-                        <h2 class="wow" data-splitting><span class="color">Nos</span> Services</h2>
-                      </div>
+                        <h2 class="wow services" data-splitting><span class="color">Nos</span> Services</h2>
+                    </div>
                     <div class="grid-container">
-                        <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
-                            <h3>BUREAU D’ETUDE</h3>
-                            <div class="content">
+                        <div class="grid-item"  data-wow-delay="400ms">
+                            <h3 class="toggle-button">BUREAU D’ETUDE</h3>
+                            <div class="content service-details">
                                 <p>La première étape consiste en l’étude du projet.</p>
-                                
-                                <p>Nous disposons d’un bureau d’étude en interne qui commencera par analyser vos besoins et définir les critères de faisabilité.</p>
-                               
-                                <p>En collaboration, bureau d’étude et chargés d’affaires, aidés d’outils de dernière génération, veillerons à vous apporter des solutions personnalisées.</p>
-                              
+
+                                <p>Nous disposons d’un bureau d’étude en interne qui commencera par analyser vos besoins
+                                    et définir les critères de faisabilité.</p>
+
+                                <p>En collaboration, bureau d’étude et chargés d’affaires, aidés d’outils de dernière
+                                    génération, veillerons à vous apporter des solutions personnalisées.</p>
+
                                 <p>Cette compétence interne nous permet de répondre avec réactivité à vos demandes.</p>
-                                
-                                <p>Pour les projets le nécessitant, nous pouvons également nous appuyer sur les compétences de bureaux d’études externes partenaires pour valider nos études et notes de calcul.</p>
+
+                                <p>Pour les projets le nécessitant, nous pouvons également nous appuyer sur les
+                                    compétences de bureaux d’études externes partenaires pour valider nos études et
+                                    notes de calcul.</p>
 
                             </div>
                         </div>
-                        <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
+                        <div class="grid-item" data-wow-delay="400ms">
                             <h3>PLAN</h3>
                             <div class="content">
-                                <p>Les plans d’études, de dimensionnement et de réalisations sont réalisés en interne par le chargé d’affaires qui aura la charge du chantier. Ce travail de plan lui permet de connaître parfaitement le chantier et ses contraintes et ainsi de s’assurer de l’adéquation des plans d’échafaudages avec les ouvrages à réaliser par les différents corps d’état utilisateurs.</p>
-                                
-                                <p>Cette compétence en interne nous permet de répondre avec réactivité aux demandes post réalisations, mais également aux éventuels aléas chantiers.</p>
-                               
-        
-                            </div>
-                        </div>
-                        <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
-                            <h3>Location</h3>
-                            <div class="content">
-                                <p>Les plans réalisés en amont nous permettent de définir avec précision le matériel nécessaire à la réalisation du chantier.</p>
-                                
-                                <p>L’expertise de nos chargés d’affaires a un rôle déterminant, car elle permet de définir la stratégie permettant d’optimiser les quantités de matériels immobilisés et ainsi le coût de location pour le client.</p>
-                               
-                                <p>Notre culture client nous amène à veiller rigoureusement à l’optimisation de ce poste tout en assurant notre objectif premier : la sécurité.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
-                            <h3>Montage</h3>
-                            <div class="content">
-                                <p>L’utilisation de matériels respectant les plus hautes normes de rigidité et d’efficacité n’est, de fait, pas toujours suffisante. La sécurité des utilisateurs étant notre engagement premier, le montage est réalisé par des équipes expérimentées et régulièrement formées aux dernières normes de sécurité</p>
-                                
-                                <p>Nos équipes veilleront à ce que le montage soit réalisé dans les durées annoncées dans un souci constant de respect des engagements</p>
-                            </div>
-                        </div>
-                        <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
-                            <h3>Transport logistique</h3>
-                            <div class="content">
-                                <p>Nos transporteurs sont spécialisés dans le transport et la manutention de matériels d’échafaudages. L’ensemble de nos camions sont équipés de grue auxiliaire ce qui permet de maintenir une autonomie dans les différentes phases d’entreposage du matériel sur chantier et une nouvelle fois accroître notre rapidité d’exécution.</p>
+                                <p>Les plans d’études, de dimensionnement et de réalisations sont réalisés en interne
+                                    par le chargé d’affaires qui aura la charge du chantier. Ce travail de plan lui
+                                    permet de connaître parfaitement le chantier et ses contraintes et ainsi de
+                                    s’assurer de l’adéquation des plans d’échafaudages avec les ouvrages à réaliser par
+                                    les différents corps d’état utilisateurs.</p>
+
+                                <p>Cette compétence en interne nous permet de répondre avec réactivité aux demandes post
+                                    réalisations, mais également aux éventuels aléas chantiers.</p>
+
 
                             </div>
                         </div>
-                        <div class="grid-item" onclick="toggleContent(this)" data-wow-delay="400ms">
+                        <div class="grid-item" data-wow-delay="400ms">
+                            <h3>Location</h3>
+                            <div class="content">
+                                <p>Les plans réalisés en amont nous permettent de définir avec précision le matériel
+                                    nécessaire à la réalisation du chantier.</p>
+
+                                <p>L’expertise de nos chargés d’affaires a un rôle déterminant, car elle permet de
+                                    définir la stratégie permettant d’optimiser les quantités de matériels immobilisés
+                                    et ainsi le coût de location pour le client.</p>
+
+                                <p>Notre culture client nous amène à veiller rigoureusement à l’optimisation de ce poste
+                                    tout en assurant notre objectif premier : la sécurité.</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-wow-delay="400ms">
+                            <h3>Montage</h3>
+                            <div class="content">
+                                <p>L’utilisation de matériels respectant les plus hautes normes de rigidité et
+                                    d’efficacité n’est, de fait, pas toujours suffisante. La sécurité des utilisateurs
+                                    étant notre engagement premier, le montage est réalisé par des équipes expérimentées
+                                    et régulièrement formées aux dernières normes de sécurité</p>
+
+                                <p>Nos équipes veilleront à ce que le montage soit réalisé dans les durées annoncées
+                                    dans un souci constant de respect des engagements</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-wow-delay="400ms">
+                            <h3>Transport logistique</h3>
+                            <div class="content">
+                                <p>Nos transporteurs sont spécialisés dans le transport et la manutention de matériels
+                                    d’échafaudages. L’ensemble de nos camions sont équipés de grue auxiliaire ce qui
+                                    permet de maintenir une autonomie dans les différentes phases d’entreposage du
+                                    matériel sur chantier et une nouvelle fois accroître notre rapidité d’exécution.</p>
+
+                            </div>
+                        </div>
+                        <div class="grid-item" data-wow-delay="400ms">
                             <h3>PROCÈS-VERBAL DE RÉCEPTION</h3>
                             <div class="content">
-                                <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux d’échafaudages et un bulletin d’adéquation validant la coordination entre les différents corps-d ’état utilisateurs.</p>
-                                
-                                <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux d’échafaudages et un bulletin d’adéquation validant la coordination entre les différents corps-d’état utilisateurs</p>
-                               
-                                <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux d’échafaudages et un bulletin d’adéquation validant la coordination entre les différents corps-d ’état utilisateurs.</p>
+                                <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux
+                                    d’échafaudages et un bulletin d’adéquation validant la coordination entre les
+                                    différents corps-d ’état utilisateurs.</p>
+
+                                <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux
+                                    d’échafaudages et un bulletin d’adéquation validant la coordination entre les
+                                    différents corps-d’état utilisateurs</p>
+
+                                <p>Nous validons tous nos montages par un Procès-Verbal de réception de travaux
+                                    d’échafaudages et un bulletin d’adéquation validant la coordination entre les
+                                    différents corps-d ’état utilisateurs.</p>
                             </div>
                         </div>
                     </div>
@@ -320,11 +362,7 @@
     <script src="assets/vendors/animsition-preloader/js/animsition.min.js"></script>
 
     <script src="assets/js/theme.js"></script>
-    <script>
-        function toggleContent(element) {
-            element.classList.toggle('active');
-        }
-    </script>
+   
 </body>
 
 </html>

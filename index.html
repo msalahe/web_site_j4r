@@ -99,8 +99,8 @@
           <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="" />
-                <img src="assets/images/logo.png" alt="" />
+                <img src="assets/images/j4r_logo.png" alt="" />
+                <img src="assets/images/j4r_logo.png" alt="" />
               </a>
               <a class="number" href="tel:+33160072201">+33 (1) 6007-22-01</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -353,7 +353,7 @@
       <section class="latest_news_area pb-174">
         <div class="container">
           <div class="main_title">
-            <h2 class="wow" data-splitting><span class="color">Dernières</span> projets</h2>
+            <h2 class="wow" data-splitting><span class="color">Dernières</span> projets   <a class="arrow_btn" href="portfolio.html">Voir Plus<i class="lnr lnr-chevron-right"></i></a></h2>
           </div>
           <div class="latest_news_inner row justify-content-center">
             <div class="col-lg-4 col-md-6">
@@ -497,38 +497,6 @@
 
   <script src="assets/js/theme.js"></script>
 
-  <script>
-    document.addEventListener('scroll', function () {
-      var container = document.getElementById('infoContainer');
-      var position = container.getBoundingClientRect();
-
-      // Checking if the container is within the viewport
-      if (position.top >= 0 && position.bottom <= window.innerHeight) {
-        container.classList.add('visible');
-        startCounter();
-      }
-    });
-
-    function startCounter() {
-      const counters = document.querySelectorAll('.item h2');
-      counters.forEach(counter => {
-        const updateCount = () => {
-          const target = +counter.getAttribute('data-target');
-          const count = +counter.innerText;
-
-          const increment = target / 200;
-
-          if (count < target) {
-            counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 20);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCount();
-      });
-    }
-  </script>
 </body>
 
 </html>
