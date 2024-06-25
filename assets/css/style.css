@@ -126,7 +126,7 @@ button:focus {
 }
 
 .pt-174 {
-  padding-top: 170px;
+  padding-top: 100px;
 }
 
 .pb-174 {
@@ -159,6 +159,10 @@ button:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.media .media-body p {
+  font-size: 14px;
 }
 
 ::-webkit-scrollbar {
@@ -211,7 +215,7 @@ button:focus {
 
 .main_title h2 {
   color: #000;
-  font-size: 48px;
+  font-size: 25px;
   line-height: 50px;
   margin-bottom: 0px;
 }
@@ -440,6 +444,7 @@ button:focus {
 
 .home_logo img {
   margin-top: 5vmin;
+  margin-left: 5vmin;
   width: 100%;
 }
 
@@ -659,7 +664,7 @@ button:focus {
 }
 
 .main_menu .navbar .nav.navbar-nav li:hover a, .main_menu .navbar .nav.navbar-nav li.active a {
-  color: #28c0ef;
+  color: #001d25;
 }
 
 .main_menu .navbar .nav.navbar-nav li:hover a:before, .main_menu .navbar .nav.navbar-nav li.active a:before {
@@ -851,8 +856,8 @@ button:focus {
 }
 
 .who_we_text p {
-  max-width: 492px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .who_we_text .arrow_btn {
@@ -1075,7 +1080,7 @@ button:focus {
 }
 
 .experience_design_area .exp_text .media-body p {
-  font: 20px/35px "swanse";
+  font: 17px/25px "swanse";
   color: #000;
   max-width: 400px;
   margin-bottom: 35px;
@@ -1084,7 +1089,7 @@ button:focus {
 .exp_design_text h2 {
   color: #000;
   font: 35px/42px "swanseb";
-  margin-bottom: 40px;
+ 
 }
 
 .exp_design_text h2 span {
@@ -1092,9 +1097,9 @@ button:focus {
 }
 
 .exp_design_text p {
-  font-size: 26px;
+  font-size: 15px;
   line-height: 52px;
-  margin-bottom: -15px;
+
 }
 
 /* End Experience Area css
