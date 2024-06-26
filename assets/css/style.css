@@ -215,7 +215,7 @@ button:focus {
 
 .main_title h2 {
   color: #000;
-  font-size: 25px;
+  font-size: 45px;
   line-height: 50px;
   margin-bottom: 0px;
 }
@@ -353,7 +353,6 @@ button:focus {
 }
 
 .submit_btn:hover {
-  background: #000;
   color: #fff;
 }
 
@@ -443,7 +442,7 @@ button:focus {
 }
 
 .home_logo img {
-  margin-top: 5vmin;
+  margin-top: 3vmin;
   margin-left: 5vmin;
   width: 100%;
 }
