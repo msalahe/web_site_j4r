@@ -93,7 +93,7 @@
     height: 2px;
     width: 30px;
     display: block;
-    background: #fff;
+    background: #000000;
     cursor: pointer;
     transition: background 0.3s linear;
     position: absolute;
@@ -107,14 +107,14 @@
     background: transparent;
   }
   .navbar-light .navbar-toggler.collapsed span {
-    background: #fff;
+    background: #000000;
   }
   .navbar-light .navbar-toggler span:before {
     content: "";
     height: 2px;
     width: 30px;
     display: block;
-    background: #fff;
+    background: #000000;
     left: 0px;
     top: -10px;
     position: absolute;
@@ -125,7 +125,7 @@
     height: 2px;
     width: 30px;
     display: block;
-    background: #fff;
+    background: #000000;
     left: 0px;
     bottom: -10px;
     position: absolute;
@@ -338,6 +338,7 @@
     display: block;
     padding: 0px 15px;
     border-bottom: 1px solid #adadad33;
+   
   }
   .main_menu .navbar .nav.navbar-nav li .mobile_dropdown {
     display: inline-block;

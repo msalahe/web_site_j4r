@@ -42,6 +42,8 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: "swanse";
   src: url(../fonts/swansea-webfont.woff);
@@ -126,7 +128,7 @@ button:focus {
 }
 
 .pt-174 {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 .pb-174 {
@@ -521,16 +523,20 @@ button:focus {
 .main_menu .navbar .nav.navbar-nav li {
   margin-right: 32px;
 }
-
 .main_menu .navbar .nav.navbar-nav li a {
-  color: #fff;
-  font-family: "swanse";
+  color: #000;
   position: relative;
-  font: 16px/138px "swanse";
+  font: 16px/100px "swanse";
   position: relative;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
+
+
 
 .main_menu .navbar .nav.navbar-nav li a:after {
   display: none;
@@ -663,7 +669,7 @@ button:focus {
 }
 
 .main_menu .navbar .nav.navbar-nav li:hover a, .main_menu .navbar .nav.navbar-nav li.active a {
-  color: #001d25;
+  color: #0abcee;
 }
 
 .main_menu .navbar .nav.navbar-nav li:hover a:before, .main_menu .navbar .nav.navbar-nav li.active a:before {
@@ -775,7 +781,9 @@ button:focus {
 }
 
 .main_slider_area ul li .slider_text_box .first_text span {
-  color: #28c0ef;
+  color: #fff;
+  font-family: Montserrat;
+ 
 }
 
 .main_slider_area ul li .slider_text_box .secand_text {
@@ -857,6 +865,8 @@ button:focus {
 .who_we_text p {
   margin-bottom: 20px;
   text-align: justify;
+  font-family: Montserrat;
+  
 }
 
 .who_we_text .arrow_btn {
@@ -3128,9 +3138,10 @@ button:focus {
   width: 100%;
   left: 0px;
   bottom: 0px;
-  padding-top: 150px;
-  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-bottom: 30px;
   border-top: 1px solid #a6a6a6;
+  background-color: #e4e4e4
 }
 
 .copyright_wd p {

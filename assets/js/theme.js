@@ -395,6 +395,7 @@
       $(this).validate({
         errorClass: "error wobble-error",
         submitHandler: function (form) {
+          console.log(form);
           $.ajax({
             type: "POST",
             url: "mail.php",

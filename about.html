@@ -23,10 +23,13 @@
     <link rel="stylesheet" href="assets/vendors/popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/vendors/splitting/splitting.css" />
     <link rel="stylesheet" href="assets/vendors/animsition-preloader/css/animsition.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
     <style>
         .grid-container {
             display: grid;
@@ -37,8 +40,7 @@
         .grid-item {
             background-color: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
             cursor: pointer;
             transition: transform 0.3s;
         }
@@ -95,7 +97,175 @@
             margin-top: 50px;
 
         }
-    </style>
+
+        .container-valeur {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .value-box {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .value-box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .value-box h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .value-box p {
+            font-size: 0.9em;
+            color: #666;
+            text-align: left;
+            text-align: justify;
+        }
+
+        .navbar {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .centered-nav {
+            justify-content: center;
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .center {
+            width: 100%;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            /* Centrer les éléments */
+        }
+
+        .navbar-nav>li {
+            display: inline-block;
+            position: relative;
+            margin: 0 15px;
+            /* Ajustez selon vos besoins */
+        }
+
+        .section-background {
+            background-image: url('assets/images/j4r-echafaudage-slide1.jpg');
+            /* Remplacez par le chemin de votre image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            /* Couleur du texte en blanc pour la lisibilité */
+
+        }
+
+        .navbar-nav>li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: -15px;
+            /* Ajustez selon vos besoins */
+            top: 15%;
+            /* Positionnement pour centrer verticalement */
+            height: 70%;
+            /* Hauteur de la barre */
+            border-right: 1px solid #dad7d7;
+            /* Couleur de la barre */
+        }
+
+        .navbar-nav>li a {
+            text-decoration: none;
+            color: #000;
+            padding: 0 10px;
+        }
+
+        .navbar-nav>li.active a {
+            color: #007bff;
+            /* Couleur pour l'élément actif */
+        }
+
+        /* Media query pour enlever les barres verticales en mode responsive */
+        @media (max-width: 768px) {
+            .navbar-nav>li:not(:last-child)::after {
+                content: none;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content .left-column {
+            flex: 2;
+            min-width: 250px;
+            margin-right: 20px;
+        }
+
+        .content .right-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .right-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .right-column ul li::before {
+            content: "•";
+            color: #333;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .right-column h3 {
+            margin-top: 0;
+        }
+
+        .content p,
+        .right-column li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content .left-column {
+                margin-right: 0;
+            }
+        }
+
+
+
+       
+    </style>    <link rel="stylesheet" href="assets/css/footer.css" />
+
 </head>
 
 <body data-scroll-animation="true" class="loading">
@@ -103,37 +273,39 @@
         <div class="body_wrapper">
 
             <!--================Header Area =================-->
-            <header class="header_area menu_dark">
+            <header class="header_area home_page">
                 <div class="home_logo">
-                    <img src="assets/images/logo.png" alt="">
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
                 </div>
                 <div class="main_menu">
                     <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/j4r_logo.png" alt="" />
+                                <img src="assets/images/j4r_logo.png" alt="" />
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            <button class="navbar-toggler " type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="nav navbar-nav ml-auto">
-                                    <li class="dropdown submenu">
-                                        <a href="index.html">Accueil</a>
+                                <ul class="nav navbar-nav centered-nav">
+                                    <li class="">
+                                        <a href="index.html"><i class="fas fa-home"></i></a>
                                     </li>
-                                    <li class="active"><a href="about.html">Qui sommes-nous ?</a></li>
+                                    <li class="active"><a href="about.html">J4R ÉCHAFAUDAGES</a></li>
                                     <li class="dropdown submenu">
-                                        <a href="portfolio.html">Nos Références</a>
+                                        <a href="portfolio.html">RÉALISATIONS</a>
                                     </li>
-
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">CONTACT</a></li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
+
                 </div>
+
             </header>
             <!--================End Header Area =================-->
             <!--================About Image Area =================-->
@@ -172,17 +344,47 @@
                     </div>
                     <div class="exp_design_text pt-174">
 
-                        <p class="justify">
-                            La société J4R a débuté son activité sur des chantiers de constructions et à progressivement
-                            développée son expertise pour intervenir aujourd’hui également sur des marchés de
-                            rénovations, de restaurations, d’industries, …
-                        </p>
-                        <br>
-                        <p class="justify">
-                            Gérant en moyenne une soixantaine de chantiers par mois en Île De France, notre objectif
-                            premier est d’assurer la sécurité des utilisateurs et de faciliter la mise en œuvre de leurs
-                            activités.
-                        </p>
+                        <div class="container">
+                            <div class="content">
+                                <div class="left-column">
+                                    <p>Créée en 2013, la société J4R échafaudage est spécialisée dans <strong>l’étude,
+                                            la location, le montage, le transport et la maintenance de tous types
+                                            d’échafaudages</strong>.</p>
+                                    <p>Notre entreprise intervient sur <strong>toute la région Ile de France</strong>
+                                        avec une prédisposition pour les chantiers dits « complexes ».</p>
+                                    <p>Installées en Seine et Marne (77) depuis sa création, nos équipes ont la
+                                        particularité d’œuvrer dans l’un des départements les plus rigoureux de France
+                                        en matière de protections collectives.</p>
+                                    <p>La société J4R a débuté son activité sur des <strong>chantiers de
+                                            constructions</strong> et a progressivement développé son expertise pour
+                                        intervenir aujourd’hui également sur des marchés de <strong>rénovations, de
+                                            restaurations, d’industries</strong>, ...</p>
+                                    <p>Gérant en moyenne une soixantaine de chantiers par mois en Île De France, notre
+                                        objectif premier est <strong>d’assurer la sécurité des utilisateurs et de
+                                            faciliter la mise en œuvre de leurs activités</strong>.</p>
+                                </div>
+                                <div class="right-column">
+                                    <h3>Qui sont nos clients ?</h3>
+                                    <ul>
+                                        <li>Des maîtres d’ouvrages privés et publics,</li>
+                                        <li>Des entreprises (gros-œuvre, charpente, couverture, ravalement, menuiserie,
+                                            serrurerie ...),</li>
+                                        <li>Des professionnels (publicitaires, exposants, ...)</li>
+                                        <li>De l’industrie,</li>
+                                        <li>Des particuliers, ...</li>
+                                    </ul>
+                                    <h3>Quelles solutions utilisons-nous ?</h3>
+                                    <ul>
+                                        <li>Échafaudages multidirectionnels fixes ou roulants</li>
+                                        <li>Protections couvreurs,</li>
+                                        <li>Recettes à matériaux,</li>
+                                        <li>Escaliers et sapines d’accès</li>
+                                        <li>Échafaudage type parapluie,</li>
+                                        <li>Plateformes de travails et d’accès, ...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -298,7 +500,57 @@
                     <div class="main_title">
                         <h2 class="wow services" data-splitting><span class="color">NOS</span> VALEURS</h2>
                     </div>
+                    <div class="container-valeur">
+                        <div class="value-box">
+                            <img src="assets/images/J4R_sécurité-150x150.png" alt="Sécurité">
+                            <h3>La sécurité, notre valeur première</h3>
+                            <p>Notre métier consiste à assurer <strong>la sécurité</strong> des utilisateurs de nos
+                                ouvrages, mais également celle de nos monteurs. Afin de répondre à ces objectifs, nous
+                                travaillons exclusivement avec du <strong>matériel LAYHER de type
+                                    multi-directionnel</strong> composé de garde-corps de montage et démontage en
+                                sécurité (dit MDS). Référence mondiale en système d’échafaudage, ce matériel répond
+                                rigoureusement aux exigences les plus élevées en matière de sécurité.</p>
+                            <p>Aussi, nous veillons à ce que toutes nos équipes soient <strong> régulièrement formées
+                                </strong> à l’évolution des normes en matière de sécurité.</p>
 
+                        </div>
+                        <div class="value-box">
+                            <img src="assets/images/J4R_engagement_réactivité-150x150.png" alt="Engagement">
+                            <h3>L'engagement et la réactivité</h3>
+                            <p>L’une des clés de notre succès repose sur <strong>une équipe engagée</strong>. Les femmes
+                                et les hommes constituant l’équipe de J4R ont en commun <strong>un esprit d’équipe, de
+                                    partage et une volonté d’amélioration continue</strong>. Chaque projet est
+                                <strong>un nouveau défi</strong> et chacun veille à trouver les solutions les plus
+                                efficaces dans une volonté de toujours mieux faire.
+                            </p>
+                            <p>La relation de proximité établie entre les équipes de J4R, nos partenaires et nos
+                                fournisseurs nous permet de garantir <strong> une réactivité </strong> pour laquelle
+                                nous sommes aujourd’hui reconnus.</p>
+                            <p>Cette réactivité est également aidée par notre positionnement géographique qui nous
+                                permet d’assurer<strong> un suivi rigoureux et régulier </strong> de tous nos chantiers
+                                situés en région Ile de France.</p>
+
+                        </div>
+                        <div class="value-box">
+                            <img src="assets/images/J4R_professionnalisme_performance-150x150.png"
+                                alt="Professionnalisme">
+                            <h3>Le professionnalisme et la performance</h3>
+                            <p>Notre force repose également sur <strong>une équipe qualifiée</strong> aux différentes
+                                étapes d’un projet. Nos chargés d’affaires ont la compétence de réaliser
+                                <strong>l’ensemble des tâches afférentes à un chantier</strong>: de l’étude sur plan ou
+                                relevé à la réalisation des plans d’échafaudages en 3D, Autocad ou Revit.
+                            </p>
+                            <p>Cette large compétence permet ainsi de <strong> maîtriser les contraintes </strong> d’un
+                                chantier à toutes ses étapes et ainsi assurer une meilleure coordination..</p>
+                            <p>Nos chargés d’affaires sont les interlocuteurs principaux des clients et veillent
+                                à<strong> optimiser la coordination </strong> entre le maître d’œuvre, les entreprises
+                                utilisatrices et les équipes de montage.</p>
+                            <p>Animés par le <strong>goût du défi </strong> et la <strong>volonté constante
+                                    d’évolution,</strong> nous veillons à nous former en continu dans le but d’être
+                                prêts pour </strong> le Bâtiment numérique de demain <strong></p>
+
+                        </div>
+                    </div>
 
                 </div>
             </section>
@@ -313,46 +565,37 @@
         <!--================Footer Area =================-->
         <footer class="footer_area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-                        <aside class="f_widget logo_wd">
-                            <img src="assets/images/logo.png" alt="" width="70%">
-                        </aside>
+                <div class="footer_content ">
+                    <div class="footer_logo">
+                        <img src="assets/images/logo.png" alt="J4R Échafaudages">
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-7">
-                        <aside class="f_widget copyright_wd">
-                            <p>© J4R. 2024<br />
-                                All Rights Resevered</p>
-                        </aside>
+                    <div class="footer_section">
+                        <h5>NAVIGATION</h5>
+                        <ul class="nav flex-column">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">J4R ÉCHAFAUDAGES</a></li>
+                            <li><a href="portfolio.html">RÉALISATIONS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                        <aside class="f_widget list_wd">
-                            <ul class="nav flex-column">
-                                <li><a href="index.html">ACCUEIL</a></li>
-                                <li><a href="about.html">Qui sommes-nous ?</a></li>
-                                <li><a href="portfolio.html">Nos Références</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                        <aside class="f_widget list_wd">
-                            <ul class="nav flex-column">
-                                <li><a href="https://fr.linkedin.com/company/j4r-echafaudages"
-                                        target="_blank">LINKEDIN</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                        <aside class="f_widget list_wd">
-                            <ul class="nav flex-column">
+                    <div class="footer_section">
+                        <ul>
+                            <li><a href="https://fr.linkedin.com/company/j4r-echafaudages" target="_blank">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a></li>
 
-                            </ul>
-                        </aside>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <h5>CONTACT</h5>
+                        <p>Adresse : 49 Rue Ampère<br>77400 Lagny-sur-Marne</p>
+                        <p>Horaires : 8h – 18H du lundi au vendredi</p>
+                        <p>Téléphone : 01 60 07 22 01</p>
                     </div>
                 </div>
             </div>
         </footer>
+
         <!--================End Footer Area =================-->
     </div>
 

@@ -23,8 +23,11 @@
   <link rel="stylesheet" href="assets/vendors/popup/magnific-popup.css" />
   <link rel="stylesheet" href="assets/vendors/splitting/splitting.css" />
   <link rel="stylesheet" href="assets/vendors/animsition-preloader/css/animsition.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- main css -->
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="nicepage.css" media="screen">
@@ -35,6 +38,66 @@
     .center {
       width: 100%;
     }
+
+    .navbar-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      /* Centrer les éléments */
+    }
+
+    .navbar-nav>li {
+      display: inline-block;
+      position: relative;
+      margin: 0 15px;
+      /* Ajustez selon vos besoins */
+    }
+
+    .section-background {
+      background-image: url('assets/images/j4r-echafaudage-slide1.jpg');
+      /* Remplacez par le chemin de votre image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      /* Couleur du texte en blanc pour la lisibilité */
+
+    }
+
+    .navbar-nav>li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      /* Ajustez selon vos besoins */
+      top: 15%;
+      /* Positionnement pour centrer verticalement */
+      height: 70%;
+      /* Hauteur de la barre */
+      border-right: 1px solid #dad7d7;
+      /* Couleur de la barre */
+    }
+
+    .navbar-nav>li a {
+      text-decoration: none;
+      color: #000;
+      padding: 0 10px;
+    }
+
+    .navbar-nav>li.active a {
+      color: #007bff;
+      /* Couleur pour l'élément actif */
+    }
+
+    /* Media query pour enlever les barres verticales en mode responsive */
+    @media (max-width: 768px) {
+      .navbar-nav>li:not(:last-child)::after {
+        content: none;
+      }
+    }
+
+
+
+
 
     .container_counter {
       display: flex;
@@ -120,7 +183,7 @@
     }
 
     .header_area {
-      background-color: rgba(46, 196, 243, 0.25);
+      background-color: rgb(252, 252, 252);
       /* Use rgba for the background color with transparency */
 
     }
@@ -143,12 +206,20 @@
     .home_logo img {
 
       margin-left: 15vmin;
-      width: 90%;
+
     }
 
     .main_title h2 {
       font-size: 25px;
 
+    }
+
+    .slider_text_box.center .slider_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      /* Adjust this value to control vertical spacing */
     }
   </style>
 </head>
@@ -160,7 +231,7 @@
       <!--================Header Area =================-->
       <header class="header_area home_page">
         <div class="home_logo">
-          <a href="index.html"><img src="assets/images/j4r_logo.png" alt=""></a>
+          <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
         </div>
         <div class="main_menu">
           <div class="container">
@@ -169,20 +240,20 @@
                 <img src="assets/images/j4r_logo.png" alt="" />
                 <img src="assets/images/j4r_logo.png" alt="" />
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav centered-nav">
-                  <li class="dropdown submenu active">
-                    <a href="index.html">Accueil</a>
+                  <li class="active">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
                   </li>
-                  <li><a href="about.html">Qui sommes-nous ?</a></li>
+                  <li><a href="about.html">J4R ÉCHAFAUDAGES</a></li>
                   <li class="dropdown submenu">
-                    <a href="portfolio.html">Nos Références</a>
+                    <a href="portfolio.html">RÉALISATIONS</a>
                   </li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
                 </ul>
               </div>
             </nav>
@@ -210,20 +281,22 @@
                   data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on"
                   data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
                   data-textAlign="center">
-                  <img src="assets/images/logo.png" alt=""><span> <br> Expert dans l'étude, la location et le montage
+                  <img src="assets/images/j4r_logo.png" alt=""><span class="title_home"> <br> Expert dans l'étude, la
+                    location et le
+                    montage
                     d’échafaudages
                   </span>
                 </div>
 
-                <div class="tp-caption tp-resizeme slider_button" data-x="['left','left','left','left','left']"
-                  data-hoffset="-290" data-y="['center','center','center','top']"
-                  data-voffset="['200','200','200','410','410']" data-fontsize="['17','17','17','17']"
-                  data-lineheight="['46','46','46','46']" data-width="none" data-height="none" data-whitespace="nowrap"
-                  data-type="text" data-responsive_offset="on"
+                <div class="tp-caption tp-resizeme slider_button" data-x="center" data-hoffset="" data-y="center"
+                  data-voffset="200" data-fontsize="['14','14','14','14']" data-lineheight="['46','46','46','46']"
+                  data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                  data-responsive_offset="on"
                   data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                  <a class="arrow_btn" href="portfolio.html">VOIR PROJETS<i class="lnr lnr-chevron-right"></i></a>
+                  <a class="arrow_btn project_button" href="portfolio.html">Voir Projets<i
+                      class="lnr lnr-chevron-right"></i></a>
                 </div>
-              
+
               </div>
             </li>
           </ul>
@@ -237,7 +310,6 @@
           <div class="row">
             <div class="col-lg-12 col-md-12">
               <div class="who_we_text">
-
                 <p class="wow fadeInUp" data-wow-delay="400ms">Créée en 2013, la société J4R échafaudage est spécialisée
                   dans <strong>l’étude, la location, le montage, le transport et la maintenance de tous types
                     d’échafaudages.</strong>
@@ -250,9 +322,7 @@
                   l’un des départements les plus rigoureux de France en matière de protections collectives
                 </p>
                 <a class="arrow_btn" href="about.html">Voir <i class="lnr lnr-chevron-right"></i></a>
-                <h5>Julien <br />
-                  Rodrigues</h5>
-                <h6>CEO & Founder</h6>
+
               </div>
             </div>
 
@@ -261,7 +331,8 @@
       </section>
       <!--================End Who We Are Area =================-->
 
-      <section class="u-align-center u-clearfix u-container-align-center u-section-1" src="" id="carousel_7b23">
+      <section class="u-align-center u-clearfix u-container-align-center u-section-1 section-background"
+        id="carousel_7b23">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
           <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
             <div class="u-repeater u-repeater-1">
@@ -285,6 +356,21 @@
               <div
                 class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
                 <div
+                  class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-5">
+                  <div
+                    class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-3">
+                    <div class="u-container-layout u-valign-middle">
+                      <h3 class="u-align-center u-custom-font u-font-oswald u-text u-text-default u-text-6"
+                        data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">50+
+                      </h3>
+                    </div>
+                  </div>
+                  <h5 class="u-align-center u-text u-text-default u-text-palette-1-dark-3 u-text-7">Compagnons</h5>
+                </div>
+              </div>
+              <div
+                class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                <div
                   class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-3">
                   <div
                     class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-2">
@@ -302,27 +388,12 @@
               <div
                 class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
                 <div
-                  class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-5">
-                  <div
-                    class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-3">
-                    <div class="u-container-layout u-valign-middle">
-                      <h3 class="u-align-center u-custom-font u-font-oswald u-text u-text-default u-text-6"
-                        data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">250+
-                      </h3>
-                    </div>
-                  </div>
-                  <h5 class="u-align-center u-text u-text-default u-text-palette-1-dark-3 u-text-7">Clients</h5>
-                </div>
-              </div>
-              <div
-                class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                <div
                   class="u-container-layout u-similar-container u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-7">
                   <div
                     class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-4">
                     <div class="u-container-layout u-valign-middle">
                       <h3 class="u-align-center u-custom-font u-font-oswald u-text u-text-default u-text-8"
-                        data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">1000+
+                        data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">1500+
                       </h3>
                     </div>
                   </div>
@@ -398,47 +469,38 @@
 
     <div class="height-emulator"></div>
     <!--================Footer Area =================-->
-    <footer class="footer_area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-            <aside class="f_widget logo_wd">
-              <img src="assets/images/logo.png" alt="" width="70%">
-            </aside>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-7">
-            <aside class="f_widget copyright_wd">
-              <p>© J4R. 2024<br />
-                All Rights Resevered</p>
-            </aside>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-            <aside class="f_widget list_wd">
-              <ul class="nav flex-column">
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="about.html">Qui sommes-nous ?</a></li>
-                <li><a href="portfolio.html">Nos Références</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </aside>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-            <aside class="f_widget list_wd">
-              <ul class="nav flex-column">
-                <li><a href="https://fr.linkedin.com/company/j4r-echafaudages" target="_blank">LINKEDIN</a></li>
-              </ul>
-            </aside>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-            <aside class="f_widget list_wd">
-              <ul class="nav flex-column">
+     <footer class="footer_area">
+            <div class="container">
+                <div class="footer_content ">
+                    <div class="footer_logo">
+                        <img src="assets/images/logo.png" alt="J4R Échafaudages">
+                    </div>
+                    <div class="footer_section">
+                        <h5>NAVIGATION</h5>
+                        <ul class="nav flex-column">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">J4R ÉCHAFAUDAGES</a></li>
+                            <li><a href="portfolio.html">RÉALISATIONS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <ul>
+                            <li><a href="https://fr.linkedin.com/company/j4r-echafaudages" target="_blank">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a></li>
 
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </footer>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <h5>CONTACT</h5>
+                        <p>Adresse : 49 Rue Ampère<br>77400 Lagny-sur-Marne</p>
+                        <p>Horaires : 8h – 18H du lundi au vendredi</p>
+                        <p>Téléphone : 01 60 07 22 01</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     <!--================End Footer Area =================-->
 
   </div>

@@ -22,18 +22,191 @@
     <link rel="stylesheet" href="assets/vendors/popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/vendors/splitting/splitting.css" />
     <link rel="stylesheet" href="assets/vendors/animsition-preloader/css/animsition.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+
+    .contact_page_area {
+        padding-top: 50px;
+    }
+
+    .contact-info {
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+        padding-top: 50px;
+        margin-top: 80px;
+    }
+
+    .navbar-light .navbar-toggler span {
+        color: #000;
+    }
+
+    .contact-info h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        border-bottom: 2px solid #000;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-info img {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .centered-nav {
+        justify-content: center;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        /* Centrer les éléments */
+    }
+
+    .navbar-nav>li {
+        display: inline-block;
+        position: relative;
+        margin: 0 15px;
+        /* Ajustez selon vos besoins */
+    }
+
+    .section-background {
+        background-image: url('assets/images/j4r-echafaudage-slide1.jpg');
+        /* Remplacez par le chemin de votre image */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        /* Couleur du texte en blanc pour la lisibilité */
+
+    }
+
+    .navbar-nav>li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        /* Ajustez selon vos besoins */
+        top: 15%;
+        /* Positionnement pour centrer verticalement */
+        height: 70%;
+        /* Hauteur de la barre */
+        border-right: 1px solid #dad7d7;
+        /* Couleur de la barre */
+    }
+
+    .navbar-nav>li a {
+        text-decoration: none;
+        color: #000;
+        padding: 0 10px;
+    }
+
+    .navbar-nav>li.active a {
+        color: #007bff;
+        /* Couleur pour l'élément actif */
+    }
+
+    /* Media query pour enlever les barres verticales en mode responsive */
+    @media (max-width: 768px) {
+        .navbar-nav>li:not(:last-child)::after {
+            content: none;
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content .left-column {
+        flex: 2;
+        min-width: 250px;
+        margin-right: 20px;
+    }
+
+    .content .right-column {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .right-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .right-column ul li::before {
+        content: "•";
+        color: #333;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .right-column h3 {
+        margin-top: 0;
+    }
+
+    .content p,
+    .right-column li {
+        margin-bottom: 10px;
+    }
+</style>
 
 <body data-scroll-animation="true" class="loading">
     <div class="animsition">
         <div class="body_wrapper">
 
             <!--================Header Area =================-->
-            <header class="header_area menu_dark">
+            <header class="header_area home_page">
                 <div class="home_logo">
                     <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
                 </div>
@@ -42,54 +215,44 @@
                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/j4r_logo.png" alt="" />
+                                <img src="assets/images/j4r_logo.png" alt="" />
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            <button class="navbar-toggler " type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="nav navbar-nav ml-auto">
-                                    <li class="dropdown submenu">
-                                        <a href="index.html">Accueil</a>
-
+                                <ul class="nav navbar-nav centered-nav">
+                                    <li class="">
+                                        <a href="index.html"><i class="fas fa-home"></i></a>
                                     </li>
-                                    <li><a href="about.html">Qui sommes-nous ?</a></li>
+                                    <li class="active"><a href="about.html">J4R ÉCHAFAUDAGES</a></li>
                                     <li class="dropdown submenu">
-                                        <a href="portfolio.html">Nos Références</a>
-
+                                        <a href="portfolio.html">RÉALISATIONS</a>
                                     </li>
-
-                                    <li class="active"><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">CONTACT</a></li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
+
                 </div>
+
             </header>
 
+            <br>
 
 
-            <section class="contact_page_area pt-174">
+            <section class="experience_design_area p-170">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-
-                            <div class="contact_details">
-                                <p>49 Rue Ampère, 77400 Lagny-sur-Marne </p>
-                                <a href="tel:+33160072201">
-                                    <h2>+33 (1) 60 07 22 01</h2>
-                                </a>
-                                <ul class="nav flex-column">
-                                    <li><a href="mailto:rockybd1995@gmail.com"><span>Email:</span> contact@j4r.fr</a>
-                                    </li>
-                                    <li>
-                                        <span>Suivez-nous: </span>
-                                        <a href="https://fr.linkedin.com/company/j4r-echafaudages" target="_blank"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i> </a>
-                                    </li>
-
-                                </ul>
+                            <div class="contact-info">
+                                <p><strong>Adresse :</strong> 49 Rue Ampère, 77400 Lagny-sur-Marne</p>
+                                <p><strong>Téléphone :</strong> (+33) 4 73 98 50 70
+                                <p><strong>Email :</strong> <a href="mailto:contact@l4mn.fr">contact@j4r.fr</a></p>
+                                <img src="assets/images/j4r_logo.png" alt="Contact Image">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -102,23 +265,24 @@
                                         required>
                                 </div>
                                 <div class="input-group col-md-12">
-                                    <input type="text" class="form-control" id="email" name="email" required
-                                        placeholder="Email *">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email *" required>
                                 </div>
                                 <div class="input-group col-md-12">
-                                    <input type="text" class="form-control" id="subject" name="subject" required
-                                        placeholder="sujet (Optional)">
+                                    <input type="text" class="form-control" id="subject" name="subject"
+                                        placeholder="Sujet (Optional)">
                                 </div>
                                 <div class="input-group col-md-12">
-                                    <textarea class="form-control" name="message" id="message" rows="1" required
+                                    <textarea class="form-control" name="message" id="message" rows="5" required
                                         placeholder="Message"></textarea>
                                 </div>
                                 <div class="input-group col-md-12">
                                     <button type="submit" value="submit" class="btn submit_btn">Contactez-nous</button>
                                 </div>
-                                <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your
-                                    message is successfully sent...</div>
-                                <div class="error-message">We're sorry, but something went wrong</div>
+                                <div class="success-message"><i class="fa fa-check text-primary"></i> Merci ! Votre
+                                    message a été envoyé avec succès...</div>
+                                <div class="error-message">Nous sommes désolés, mais quelque chose s'est mal passé.
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -142,42 +306,32 @@
         <!--================Footer Area =================-->
         <footer class="footer_area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-                        <aside class="f_widget logo_wd">
-                            <img src="assets/images/logo.png" alt="" width="70%">
-                        </aside>
+                <div class="footer_content ">
+                    <div class="footer_logo">
+                        <img src="assets/images/logo.png" alt="J4R Échafaudages">
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-7">
-                        <aside class="f_widget copyright_wd">
-                            <p>© J4R. 2024<br />
-                                All Rights Resevered</p>
-                        </aside>
+                    <div class="footer_section">
+                        <h5>NAVIGATION</h5>
+                        <ul class="nav flex-column">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">J4R ÉCHAFAUDAGES</a></li>
+                            <li><a href="portfolio.html">RÉALISATIONS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                        <aside class="f_widget list_wd">
-                            <ul class="nav flex-column">
-                                <li><a href="index.html">ACCUEIL</a></li>
-                                <li><a href="about.html">Qui sommes-nous ?</a></li>
-                                <li><a href="portfolio.html">Nos Références</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                        <aside class="f_widget list_wd">
-                            <ul class="nav flex-column">
-                                <li><a href="https://fr.linkedin.com/company/j4r-echafaudages"
-                                        target="_blank">LINKEDIN</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                        <aside class="f_widget list_wd">
-                            <ul class="nav flex-column">
+                    <div class="footer_section">
+                        <ul>
+                            <li><a href="https://fr.linkedin.com/company/j4r-echafaudages" target="_blank">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a></li>
 
-                            </ul>
-                        </aside>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <h5>CONTACT</h5>
+                        <p>Adresse : 49 Rue Ampère<br>77400 Lagny-sur-Marne</p>
+                        <p>Horaires : 8h – 18H du lundi au vendredi</p>
+                        <p>Téléphone : 01 60 07 22 01</p>
                     </div>
                 </div>
             </div>

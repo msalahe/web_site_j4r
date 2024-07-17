@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info, .contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.contact-info h2, .contact-form h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(100% - 22px);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #c0a16b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: #a88346;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="contact-info">
+            <h2>NOUS RENCONTRER</h2>
+            <p><strong>Adresse :</strong> 32 rue Jules Verne - 63100 Clermont-Ferrand</p>
+            <p><strong>Téléphone :</strong> (+33) 4 73 98 50 70 – <strong>Fax :</strong> (+33) 4 73 98 50 79</p>
+            <p><strong>Email :</strong> <a href="mailto:contact@lgmn.fr">contact@lgmn.fr</a></p>
+            <img src="image.png" alt="Contact Image">
+        </div>
+        <div class="contact-form">
+            <h2>ECRIVEZ NOUS</h2>
+            <form action="#" method="post">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Adresse Email *</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
